@@ -33,7 +33,8 @@ h1, p {
 }
 .footer {
  background-color: #080808;
-}
+ position: absolute;
+ }
 .p, caption, a {
   color:#eee;
 }
