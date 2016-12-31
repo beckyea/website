@@ -12,7 +12,7 @@ body {
   min-height: 20%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
+  margin: 0 auto 0px;
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
