@@ -19,104 +19,81 @@
   <link href="stylesheet.css" rel="stylesheet">
 
   <script src="js/ie-emulation-modes-warning.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-91031693-1', 'auto');
-  ga('send', 'pageview'); </script>
+ga('send', 'pageview'); </script>
 
-  <!-- Wrap all page content here -->
+</head>
+
+<body>
   <div id="wrap">
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="navbar"> </div>
+    <include rel="import" href="navbar.html">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Becky Abramowitz</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="about.html">About Me</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Portfolio 
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="meam.html">Mechanical Design</a></li>
-                  <li><a href="cis.html">Software & Web Development</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://github.com/rabramowitz" target="_blank" class="pull-left"><img style="max-width:20px" src="img/github.png"></a></li>
-              <li><a href="https://www.linkedin.com/in/beckyabramowitz" target="_blank" class="pull-left"><img style="max-width:20px" src="img/linkedin.png"></a></li>
-            </ul>
+        <div class="row" style="padding-left:0px; padding-right:0px">
+          <div class="col-sm-0 col-xs-0">
           </div>
-        </div>
-      </nav>
-
-      <div class="container">
-      	<div class="row" style="padding-left:0px; padding-right:0px">
-      		<div class="col-sm-0 col-xs-0">
-         </div>
-         <div class = "col-sm-12 col-xs-12">
-          <div class="row" style="padding-left:10px; padding-right:10px">
-            <div class="image-block col-sm-2 col-xs-4" style="background: url(img/frontpage/candy.png) no-repeat center top;background-size:cover;">
-              <p> Candy Dispenser </p>
-            </div>
-            <div class="image-block col-sm-3 col-xs-8" style="background: url(img/frontpage/helmet.png) no-repeat center top;background-size:cover;">
-              <p> Foldable Helmet </p>
-            </div>
-            <div class="image-block col-sm-5 col-xs-8" style="background: url(img/frontpage/fastco.png) no-repeat center top;background-size:cover;">
-              <p> FastCompany Article </p>
-            </div>
-            <div class="image-block col-sm-2 col-xs-4" style="background: url(img/frontpage/locomote.png) no-repeat center top;background-size:cover;">
-              <p> MEAM 101 Locomote </p>      
-            </div>
-            <div class="image-block col-sm-4 col-xs-6" style="background: url(img/frontpage/gtbxsite.png) no-repeat center top;background-size:cover;">
-              <p> Gatorbotics Website </p>
-            </div>
-            <div class="image-block col-sm-2 col-xs-6" style="background: url(img/frontpage/pennappetit.png) no-repeat center top;background-size:cover;">
-              <p> Penn Appetit Layout </p>
-            </div>
-            <div class="image-block col-sm-4 col-xs-9" style="background: url(img/robockey.png) no-repeat center;background-size:cover;">
-              <p> Robockey: Autonomous Hockey Playing Robots </p>
-            </div>
-            <div class="image-block col-sm-2 col-xs-3" style="background: url(img/frontpage/dogcase.png) no-repeat center top;background-size:cover;">
-              <p> iPhone 6 Case </p>
+          <div class = "col-sm-12 col-xs-12">
+            <div class="row" style="padding-left:10px; padding-right:10px">
+              <div class="image-block col-sm-2 col-xs-4" style="background: url(img/frontpage/candy.png) no-repeat center top;background-size:cover;">
+                <p> Candy Dispenser </p>
+              </div>
+              <div class="image-block col-sm-3 col-xs-8" style="background: url(img/frontpage/helmet.png) no-repeat center top;background-size:cover;">
+                <p> Foldable Helmet </p>
+              </div>
+              <div class="image-block col-sm-5 col-xs-8" style="background: url(img/frontpage/fastco.png) no-repeat center top;background-size:cover;">
+                <p> FastCompany Article </p>
+              </div>
+              <div class="image-block col-sm-2 col-xs-4" style="background: url(img/frontpage/locomote.png) no-repeat center top;background-size:cover;">
+                <p> MEAM 101 Locomote </p>      
+              </div>
+              <div class="image-block col-sm-4 col-xs-6" style="background: url(img/frontpage/gtbxsite.png) no-repeat center top;background-size:cover;">
+                <p> Gatorbotics Website </p>
+              </div>
+              <div class="image-block col-sm-2 col-xs-6" style="background: url(img/frontpage/pennappetit.png) no-repeat center top;background-size:cover;">
+                <p> Penn Appetit Layout </p>
+              </div>
+              <div class="image-block col-sm-4 col-xs-9" style="background: url(img/robockey.png) no-repeat center;background-size:cover;">
+                <p> Robockey: Autonomous Hockey Playing Robots </p>
+              </div>
+              <div class="image-block col-sm-2 col-xs-3" style="background: url(img/frontpage/dogcase.png) no-repeat center top;background-size:cover;">
+                <p> iPhone 6 Case </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="container">
+
+        <h1> Welcome</h1>
+        <p> Hi! I'm Becky and I'm a rising senior at the Univeristy of Pennsylvania. I'm majoring in Mechanical Engineering, minoring in Computer Science, and am enrolled in a sub-matriculation program to get my Masters in Robotics in December of 2018. I made this site both to teach myself more HTML/CSS/Javascript and to serve as a portfolio for my design projects. Browse to learn more about me and the mechanical, robotics, and coding projects I have completed.</p>
+        <p> If you want to reach me, feel free to send me an email at <a href="mailto:rabram@seas.upenn.edu">rabram@seas.upenn.edu</a>. </p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('#navbar').load('navbar.html');
+    </script>
+  </body>
+
+
+  <footer class="footer">
     <div class="container">
-
-      <h1> Welcome</h1>
-      <p> Hi! I'm Becky and I'm a rising senior at the Univeristy of Pennsylvania. I'm majoring in Mechanical Engineering, minoring in Computer Science, and am enrolled in a sub-matriculation program to get my Masters in Robotics in December of 2018. I made this site both to teach myself more HTML/CSS/Javascript and to serve as a portfolio for my design projects. Browse to learn more about me and the mechanical, robotics, and coding projects I have completed.</p>
-      <p> If you want to reach me, feel free to send me an email at <a href="mailto:rabram@seas.upenn.edu">rabram@seas.upenn.edu</a>. </p>
+      <p>© Becky Abramowitz 2017</p>
     </div>
-    </div>
-
-
-    <footer class="footer">
-      <div class="container">
-        <p>© Becky Abramowitz 2017</p>
-      </div>
-    </footer>
+  </footer>
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </head>
-  </html>
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+      </html>
