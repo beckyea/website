@@ -33,48 +33,110 @@
 <body>
   <!-- Wrap all page content here -->
   <div id="wrap">
-    <div id="navbar"></div>
+    <div id="header_navbar"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Becky Abramowitz</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="meam.html" class="dropdown-toggle" data-toggle="dropdown" role="button">Mechatronics Projects
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="robockey.html">Autonomous Robot Hockey</a></li>
+                  <li><a href="orchestra.html">Bluetooth Speaker</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="meam.html" class="dropdown-toggle" data-toggle="dropdown" role="button">Mechanical Design
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="helmet.html">Foldable Bike Helmet</a></li>
+                    <li><a href="dissect.html">Rotary Telephone CAD</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="cis.html" class="dropdown-toggle" data-toggle="dropdown" role="button">Software Development
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="tetris.html">Tetris Applet</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://github.com/rabramowitz" target="_blank" class="pull-left"><img style="max-width:20px" src="img/github.png"></a></li>
+                  <li><a href="https://www.linkedin.com/in/beckyabramowitz" target="_blank" class="pull-left"><img style="max-width:20px" src="img/linkedin.png"></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
       <!-- Begin page content -->
       <div class="container">
         <div id="includedContent"></div>
-        <h1> About Me </h1>
-        <hr>
+          <h1> About Me </h1>
+          <div class="col-xs-12 col-sm-8" >
+            <h4>Bio</h4>
+            <p>I'm a Robotics Masters student at the University of Pennsylvania and am excited about software for electro-mechanical systems, especially robotic motion. I have a diverse and broad background spanning the breadth of both mechancial engineering and software development. I have academic experience in Mechatronic Design, RTOS and Embedded Software, Controls, Kinematics, Machine Learning, and Computer Vision in addition to software and mechanical fundamentals, as well as professional experience on large corporate development, small-team industrial robotic hardware and software, and user-focused design.</p>
 
-        <img src="img/becky.jpg" hspace="6" style="width:20%; height:20%; padding:5px" align="right">
-        <p> My name is Becky and I'm a rising senior at the University of Pennsylvania, majoring in Mechanical Engineering & Applied Mechanics and minoring in Computer Science. I am also submatriculating into a Masters in Robotics, and will graduate in December 2018. I'm interested in software for mechanical systems, particularly IoT and robotics. </p>
+            <p>I started dabbling in tech in late middle/early high school but never finishing projects. I tried both hardware and software in high school; I joined the FIRST Robotics teams' mechanical subteam and ran the team's website, then developed an iOS app and put it on the App Store. I went off to college declared Mechanical Engineering, excited about design and disallusioned about software. I joined a freshman residental program of mostly CS majors and blindly followed them into the CS Intro sequence (which I ended up TAing for 6 semesters). The following summer, I took a design internship at Autodesk and was surprised to find myself aching to write scripts for the software rather than use it. When I returned to Penn, I decided that I loved the Mechanical Engineering community and project-based courses enough to stay in the major and would instead tack on a CS minor and overload extra CS classes on the side. I studied abroad summer after sophomore year, and decided to try my hands at pure software the summer after junior year, taking an SDE internship at Amazon. I quickly discovered that I find pure software exciting but not fulfilling, and the most fulfilling work I had done was writing code for the assignments in the Intro to Mechatronics course. I thus decided that I wanted to become a roboticist, and have yet to look back. I was a Robotics Intern at X (formerly Google X) this past summer, and loved it.</p>
 
-        <p>Though I began taking computer science courses in high school, I began playing with code (mostly HTML) in middle school. After making a few websites for both myself and for school groups, I put an on the iOS App Store during my senior year of high school. I also found an interest in mechanical design, and was on the build team for my high school's FIRST Robotics team. At Penn, I spent 3 semesters doing layout for the food magazine, Penn Appetit, and was a computer science TA for 5 semesters. I am also the Webmaster for Penn's branch of ASME.</p>
+             <p>Those who know me would say that I am a "people person." I am happiest when I'm with my friends, and I was on the board of my sorority, Alpha Omega Epsilon, for the majority of my college career, including seriving as social chair, recruitment chair, and membership education director. In my free time, I enjoy following the San Francisco Giants and Golden State Warriors, traveling, hiking and adventuring outdoors, running, and playing with my dog.</p>
+             <p></p>
+             <h4>Resume</h4>
+             <p>Click <a href="public/Rebecca_Abramowitz_CV.pdf" target="_blank">here</a> to open in a new tab.</p>
+             <iframe src="public/Rebecca_Abramowitz_CV.pdf" width="100%" height="500px"></iframe>
 
-         <p>Those who know me would say that I am a "people person." I have served as social and recruitment chair, as well as membership education director for my sorority, Alpha Omega Epsilon. In my free time, I enjoy following the San Francisco Giants and Golden State Warriors, traveling, adventuring, running, and playing with my dog.</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
 
 
-         <h4>Coursework</h4>
-         <p>Robotics:</p>
-         <ul>
-           <li>Introduction to Mechatronic Systems (MEAM 410, Fall 2016)</li>
-           <li>Introduction to Robotics (MEAM 520, Fall 2016)</li>
-           <li>Product Design (IPD 515, Spring 2017)</li>
-        </ul>
-         <p>Mechanical Engineering:</p>
-         <ul>
-          <li>Introduction to Mechanical Design (MEAM 101, Fall 2014)</li>
-          <li>Statics & Strengths of Materials (MEAM 210, Fall 2015)</li>
-          <li>Thermodynamics (MEAM 203, Spring 2016)</li>
-          <li>Dynamics (MEAM 211, Spring 2016)</li>
-          <li>Fluid Mechanics (MEAM 302, Fall 2016)</li>
-          <li>Vibration Mechanics (MEAM 321, Spring 2017)</li>
-          <li>Heat & Mass Transfer (MEAM 333, Spring 2017)</li>
-        </ul>
-        <p>Computer Science:</p>
-        <ul>
-          <li>Introduction to Computer Programming (CIS 110, Fall 2014)</li>
-          <li>Programming Languages & Techniques I (CIS 120, Spring 2015)</li>
-          <li>Mathematical Foundations of Computer Science (CIS 160, Spring 2015)</li>
-          <li>Programming Languages & Techniques II: Data Structures (CIS 121, Fall 2016)</li>
-          <li>Computer Systems (CIS 240, Spring 2017)</li>
-          <li>Software Design and Engineering (CIS 350, Spring 2016)</li>
-        </ul>
-         <h4><a href="public/Rebecca_Abramowitz_CV.pdf" target="_blank"> Resume</a></h4>
+           <h4>Technical Coursework</h4>
+           <p>Robotics</p>
+           <ul>
+             <li>Introduction to Mechatronic Systems (MEAM 410, Fall 2016)</li>
+             <li>Introduction to Robotics (MEAM 520, Fall 2016)</li>
+             <li>Product Design (IPD 515, Spring 2017)</li>
+             <li>Feedback Control (MEAM 513, Fall 2017)</li>
+             <li>Interactive Computer Graphics (CIS 560, Fall 2017)</li>
+             <li>Applied Machine Learning (CIS 519, Spring 2018)</li>
+             <li>Machine Perception (CIS 580, Spring 2018)</li>
+          </ul>
+           <p>Mechanical Engineering</p>
+           <ul>
+            <li>Introduction to Mechanical Design (MEAM 101, Fall 2014)</li>
+            <li>Statics & Strengths of Materials (MEAM 210, Fall 2015)</li>
+            <li>Thermodynamics (MEAM 203, Spring 2016)</li>
+            <li>Dynamics (MEAM 211, Spring 2016)</li>
+            <li>Fluid Mechanics (MEAM 302, Fall 2016)</li>
+            <li>Vibration Mechanics (MEAM 321, Spring 2017)</li>
+            <li>Heat & Mass Transfer (MEAM 333, Spring 2017)</li>
+            <li>Mechanics of Solids (MEAM 354, Fall 2017)</li>
+          </ul>
+          <p>Computer Science</p>
+          <ul>
+            <li>Introduction to Computer Programming (CIS 110, Fall 2014)</li>
+            <li>Programming Languages & Techniques I (CIS 120, Spring 2015)</li>
+            <li>Mathematical Foundations of Computer Science (CIS 160, Spring 2015)</li>
+            <li>Programming Languages & Techniques II: Data Structures (CIS 121, Fall 2016)</li>
+            <li>Computer Systems (CIS 240, Spring 2017)</li>
+            <li>Software Design and Engineering (CIS 350, Spring 2016)</li>
+          </ul>
+
+          <h4>Contact</h4>
+          <p>Email (most responsive): <a href="rabram@seas.upenn.edu" target="_blank">rabram@seas.upenn.edu</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/beckyabramowitz" target="_blank">linkedin.com/in/beckyabramowitz</a></p>
+
+          <img src="img/becky.jpg" hspace="6" style="width:60%; max-height:60%; padding:5px" align="center">
+         </div>
      </div>
      </div>
 

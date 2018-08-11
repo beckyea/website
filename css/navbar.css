@@ -2,3 +2,38 @@ body {
 	min-height: 100%;
   	padding-top: 70px;
 }
+
+.navbar-inverse {
+  background-color: #FFF;
+  border-color: #2397E2;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+   color: #2397E2;
+}
+
+.navbar>.container .navbar-brand {
+	color: #2397E2;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.navbar-fixed-top {
+	border-bottom-width: 3px;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #2397E2;
+
+}
+
+.navbar-toggle, .navbar-inverse .navbar-toggle {
+	background-color: #2397E2;
+	border-width: 1px;
+	border-color: #2397E2;
+}
+
+.navbar-inverse .navbar-nav>li>a, .dropdown-menu>li>a {
+	text-decoration: none;
+	color: #9d9d9d;
+}
