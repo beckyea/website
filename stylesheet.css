@@ -36,16 +36,7 @@ h1, p {
 h4 {
   color: #2397E2;
 }
-.footer {
-  background-color: #fff;
-  position: absolute;
-  border-top-width: 3px;
-  border-color:#2397E2;
 
- }
-.footer p {
-  color: #ccc;
- }
 .p, caption, a {
   color:#2397E2;
   text-decoration: underline;
