@@ -25,7 +25,7 @@
 
   <!-- Wrap all page content here -->
   <div id="wrap">
-  <div id="navbar"> </div>
+  <div id="header_navbar"></div>
       <!-- Begin page content -->
       <div class="container">
         <div id="includedContent"></div>
@@ -93,10 +93,6 @@
         </div>
       </div>
       </div>
-
-    <script type="text/javascript">
-      $('#navbar').load('navbar.html');
-    </script>
 </body>
       <footer class="footer">
         <div class="container">
@@ -108,6 +104,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#header_navbar").load("http://beckyabramowitz.com/navbar.html");
+      });
+    </script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
