@@ -27,14 +27,21 @@
       <!-- Begin page content -->
       <div class="container">
         <div id="includedContent"></div>
-        <h1> Robust Direct Transcription (DIRTREL) Analysis</h1>
-          <h4>Overview</h4>
-         <p> This paper was the culmination of my final project for MEAM 517: Control & Optimization with Applications in Robotics, and I worked on it with Tommy Mulroy. The prompt was to spend half of a semester on an open-ended research proejct of our choosing. </p>
-         <p> Since most of what we had learned about in class had dealt with ideal situations that directly followed the laws of Newtonian physics, we decided to investigate robust controls approaches and techniques. We ended up discovering DIRTREL - Direct Transcription with Ellipsoidal Disturbances, a 2017 paper from MIT, that claims to produce robust trajectories for multi-dof systems. As detailed in the paper below, we replicated the results of the paper and performed further analysis of the DIRTREL algorithm with repsect to speed, robustness, and trackability. The code for this project was done in MATLAB with the SNOPT nonlinear optimization solver.</p>
-         <p> The code is avaliable in a repository <a hfref="https://github.com/rabramowitz/probabilistic_traj_opt" target="_blank">here</a>. The code works in Linux and Windows environments, but is currently not compatible with MacOS.</p>
-         <h4>Paper</h4>
-             <p>Click <a href="public/DIRTREL_Report.pdf" target="_blank">here</a> to open in a new tab.</p>
-             <iframe src="public/DIRTREL_Report.pdf" width="100%" height="500px"></iframe>
+        
+          <h1> Model Predictive Control for F1/10 Autonomous Racecar</h1>
+          <div class="col-xs-9">
+            <h4>Overview</h4>
+           <p> This was the final project for a Special Topics course (ESE 680) in F1/10 Autononmous Racing and I worked with Vaibhav Arcot, Hunter Lightman, and Matt Oslin. The goal of this semester-long course was to work in a team of four to develop for a tenth-scale autonomous racecar, ultimately concluding in a head-to-head race with the other teams.</p>
+           <p>Throughout the semester, we worked on a vairety of projects including PID tuning (both for ESC control and for trajectory tracking), scan matching to approximate odometry, pure pursuit of a raceline, and experimentation with Google Cartographer. The final project was to prepare our car for the head-to-head race with a more robust path planning procedure. Our team chose to implement Model Predictive Control. </p>
+           <h4>Paper</h4>
+               <p>Click <a href="public/680MPC_Report.pdf" target="_blank">here</a> to open in a new tab.</p>
+               <iframe src="public/680MPC_Report.pdf" width="100%" height="500px"></iframe>
+          </div>
+          <div class="col-xs-3">
+            <h4>Videos</h4>
+            <p>We periodically made videos to track our progress along certain projects.</p>
+            <iframe src="" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
      </div>
 
 
