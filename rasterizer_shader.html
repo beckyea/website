@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="Becky Abramowitz">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Becky Abramowitz</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <div id="header_navbar"></div>
+      <!-- Begin page content -->
+      <div class="container">
+        <div id="includedContent"></div>
+        <h1>Rasterizer and Shader</h1>
+          <h4>Overview</h4>
+         <p>This was a sequence of projects for CIS 560: Introduction to Computer Graphics. There were three parts: a rasterizer, a series of surface shaders, and a series of post-process shaders. The proejct was done in C++ using OpenGL and the QT Libraries.</p>
+           <h4>Rasterizer</h4>
+           <p>The rasterizer served as the foundation of the project, since the surface shader required a surface to shade. The objective was to take in a JSON describing a shape and to construct an image that could be displayed in a GUI. The first step in rasterizing was to break the convex shape into triangles that coud be stored in a VBO. These triangles were then assosciated with bounding boxes to reduce computation times in checking for overlaps. These overlaps were handled with a Z-buffer and the internal colors of the shapes were defined using barycentric interpolation from color values at the erticies.</p>
+           <h4>Surface Shaders</h4>
+           <p>There were several surface shaders that could be applied to the aforementioned rasterizer, and they are pictured below. Blinn-Phong is computed using the vectors of the surface normals from each of vertices in the VBO, a chosen camera location, and the location of the vertices in the world frame. The MATCAP texturing uses an existing 2D texture applied based on surface normals. The iridescent shader applies via normals over a color gradient, and the vertex deformation shader updates the positions of the vertices in the shader as a function of time.</p>
+           <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/surf/blinn-phong.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Blinn-Phong</figcaption>
+            </figure>
+           <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/surf/color_gradient.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Iridescent</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/surf/lambert.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Lambert</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/surf/matcap_surface_normals.png" style="max-width:250px; display:inline-block;">
+            <figcaption>MATCAP with Surface Normals</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+              <video src="img/shader/surf/vertex_deform.mov" style="max-width:250px; display:inline-block;" autoplay="true" controller="true" pluginspage="http://www.apple.com/quicktime/download/" controls></video>
+            <figcaption>Vertex Deformation</figcaption>
+            </figure>
+            <h4>Post-Process Shaders</h4>
+            <p>There were also some post-process shaders which are applied after the rest of the image has been precompiled. They are as follows.</p>
+            <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/post_pro/bloom.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Bloom</figcaption>
+            </figure>
+           <figure style="max-width:250px; display:inline-block;">
+            <video src="img/shader/post_pro/fractals.mov" style="max-width:250px; display:inline-block;" autoplay="true" controller="true" pluginspage="http://www.apple.com/quicktime/download/" controls></video>
+            <figcaption>Fractals</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/post_pro/gaussian_blur.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Gaussian Blur</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+            <img src="img/shader/post_pro/grayscale.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Grayscale</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+              <img src="img/shader/post_pro/sobel.png" style="max-width:250px; display:inline-block;">
+            <figcaption>Sobel</figcaption>
+            </figure>
+            <figure style="max-width:250px; display:inline-block;">
+              <video src="img/shader/post_pro/worley_noise.mov" style="max-width:250px; display:inline-block;" autoplay="true" controller="true" pluginspage="http://www.apple.com/quicktime/download/" controls></video>
+            <figcaption>Worley Noise</figcaption>
+            </figure>
+        </div>
+         <p> </p>
+     </div>
+
+
+     <div id="footer"></div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+      $(function() {
+        $("#header_navbar").load("http://beckyabramowitz.com/navbar.html");
+        $("#footer").load("http://beckyabramowitz.com/footer.html");
+
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+  </html>
