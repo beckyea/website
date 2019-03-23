@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="Becky Abramowitz">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Becky Abramowitz</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <div id="header_navbar"></div>
+      <!-- Begin page content -->
+      <div class="container">
+        <div id="includedContent"></div>
+        
+          <h1>Machine Learning Predictor for Bill Outcomes</h1>
+            <h4>Overview</h4>
+           <p>This was the final project for CIS 519: Introduction to Machine Learning and I worked with Jenny Chen and Graham Mosley. Given an open-ended prompt, we decided to apply and assess a variety of ML approaches in predicting whether or not a bill will become a law. The project was completed in Python and used data made avaliable by US Congress that contained both the text of over 30,000 bills from 2013-2018 as well as metadata about them. We also included additional data about the members of Congress at the time of the bill's proposal</p>
+           <p>To determine how to best predict the bills, we looked at a variety of features, algorithms, and analysis metrics. (99% of bills proposed don't become laws, so an always false classifier yields a deceptively high result.) This information is included in our write-up included below.
+            <p>Click <a href="public/ML_Report.pdf" target="_blank">here</a> to open the paper in a new tab.</p>
+            <iframe src="public/ML_Report.pdf" width="100%" height="500px"></iframe>
+          </div>
+            
+     </div>
+
+
+     <div id="footer"></div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+      $(function() {
+        $("#header_navbar").load("http://beckyabramowitz.com/navbar.html");
+        $("#footer").load("http://beckyabramowitz.com/footer.html");
+
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+  </html>
