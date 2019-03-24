@@ -29,9 +29,9 @@
         <div id="includedContent"></div>
         <h1>Rasterizer and Shader</h1>
           <h4>Overview</h4>
-         <p>This was a sequence of projects for CIS 560: Introduction to Computer Graphics. There were three parts: a rasterizer, a series of surface shaders, and a series of post-process shaders. The proejct was done in C++ using OpenGL and the QT Libraries.</p>
+         <p>This was a sequence of projects for CIS 560: Introduction to Computer Graphics. There were three parts: a rasterizer, a series of surface shaders, and a series of post-process shaders. The project was done in C++ using OpenGL and the QT Libraries.</p>
            <h4>Rasterizer</h4>
-           <p>The rasterizer served as the foundation of the project, since the surface shader required a surface to shade. The objective was to take in a JSON describing a shape and to construct an image that could be displayed in a GUI. The first step in rasterizing was to break the convex shape into triangles that coud be stored in a VBO. These triangles were then assosciated with bounding boxes to reduce computation times in checking for overlaps. These overlaps were handled with a Z-buffer and the internal colors of the shapes were defined using barycentric interpolation from color values at the erticies.</p>
+           <p>The rasterizer served as the foundation of the project, since the surface shader required a surface to shade. The objective was to take in a JSON describing a shape and to construct an image that could be displayed in a GUI. The first step in rasterizing was to break the convex shape into triangles that could be stored in a VBO. These triangles were then associated with bounding boxes to reduce computation times in checking for overlaps. These overlaps were handled with a Z-buffer and the internal colors of the shapes were defined using barycentric interpolation from color values at the erticies.</p>
            <h4>Surface Shaders</h4>
            <p>There were several surface shaders that could be applied to the aforementioned rasterizer, and they are pictured below. Blinn-Phong is computed using the vectors of the surface normals from each of vertices in the VBO, a chosen camera location, and the location of the vertices in the world frame. The MATCAP texturing uses an existing 2D texture applied based on surface normals. The iridescent shader applies via normals over a color gradient, and the vertex deformation shader updates the positions of the vertices in the shader as a function of time.</p>
            <figure style="max-width:250px; display:inline-block;">
@@ -55,7 +55,7 @@
             <figcaption>Vertex Deformation</figcaption>
             </figure>
             <h4>Post-Process Shaders</h4>
-            <p>There were also some post-process shaders which are applied after the rest of the image has been precompiled. They are as follows.</p>
+            <p>There were also some post-process shaders which are applied after the rest of the image has been pre-compiled. They are as follows.</p>
             <figure style="max-width:250px; display:inline-block;">
             <img src="img/shader/post_pro/bloom.png" style="max-width:250px; display:inline-block;">
             <figcaption>Bloom</figcaption>
